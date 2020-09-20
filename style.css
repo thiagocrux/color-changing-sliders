@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 500 16px 'Segoe UI', sans-serif;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+#color-labels {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#color-controls {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#color-controls > div {
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#color-display {
+  width: 80px;
+  height: 80px;
+}
+
+.input {
+  margin-left: 8px;
+  width: 45px;
+}

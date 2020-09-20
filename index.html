@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Changing Sliders</title>
+  </head>
+  <body>
+    <div id="color-labels">
+      <div>(R) Vermelho</div>
+      <div>(G) Verde</div>
+      <div>(B) Azul</div>
+    </div>
+
+    <div>
+      <div id="color-controls">
+        <div>
+          <input type="range" value="0" min="0" max="255" class="slider" />
+          <input type="number" value="0" class="input" disabled />
+        </div>
+
+        <div>
+          <input type="range" value="0" min="0" max="255" class="slider" />
+          <input type="number" value="0" class="input" disabled />
+        </div>
+
+        <div>
+          <input type="range" value="0" min="0" max="255" class="slider" />
+          <input type="number" value="0" class="input" disabled />
+        </div>
+      </div>
+
+      <div id="color-display">
+        <!-- A cor será mostrada aqui -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
