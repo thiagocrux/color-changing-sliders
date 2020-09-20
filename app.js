@@ -12,21 +12,24 @@ renderColor = () => {
   colorDisplay.style.backgroundColor = `rgb(${sliders[0].value}, ${sliders[1].value}, ${sliders[2].value})`;
 };
 
-renderColor();
+/* Carrega o DOM (boa prática opcional) */
+window.addEventListener('load', () => {
+  renderColor();
 
-/* Escuta quando um 'slider' é alterado e sincroniza os seu valor com o seu respectivo 'input' */
-sliders.forEach((slider, i) => {
-  slider.addEventListener('change', () => {
-    inputs[i].value = slider.value;
-    enableInputs();
-    renderColor();
+  /* Escuta quando um 'slider' é alterado e sincroniza os seu valor com o seu respectivo 'input' */
+  sliders.forEach((slider, i) => {
+    slider.addEventListener('change', () => {
+      inputs[i].value = slider.value;
+      enableInputs();
+      renderColor();
+    });
   });
-});
 
-/* Escuta quando um 'input' é alterado e sincroniza o seu valor com o seu respectivo 'slider' */
-inputs.forEach((input, i) => {
-  input.addEventListener('change', () => {
-    sliders[i].value = input.value;
-    renderColor();
+  /* Escuta quando um 'input' é alterado e sincroniza o seu valor com o seu respectivo 'slider' */
+  inputs.forEach((input, i) => {
+    input.addEventListener('change', () => {
+      sliders[i].value = input.value;
+      renderColor();
+    });
   });
 });
