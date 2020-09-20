@@ -7,27 +7,24 @@
 body {
   font: 500 16px 'Segoe UI', sans-serif;
   padding: 30px;
-  display: flex;
-  flex-direction: row;
-}
-
-#color-labels {
-  margin-right: 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 #color-controls {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #color-controls > div {
-  margin: 1px;
+  width: 300px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+#color-controls > div > div {
+  display: flex;
+  align-items: center;
 }
 
 #color-display {
@@ -36,6 +33,6 @@ body {
 }
 
 .input {
-  margin-left: 8px;
+  margin-left: 15px;
   width: 45px;
 }
